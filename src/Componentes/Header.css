@@ -1,0 +1,109 @@
+.cont-principal{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15vh;
+}
+.nav-menu{
+    width: 45px;
+    height: 45px;
+}
+.ul-icon{
+    list-style: none;
+    position: relative;
+}
+.ul-nav{
+    list-style: none;
+    position: absolute;
+    display: none;
+    width: 100px;
+    text-align: center;
+    height: 3rem;
+    gap: 1rem;
+}
+.ul-icon:hover > .li-icon{
+    display: block;
+    cursor: pointer;
+    background-color: red;
+}
+.ancors{
+    display: flex;
+    align-items: center;
+    width: 23%;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.7rem;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 7vh;
+    background-color: burlywood;
+}
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: white;
+    font-weight: 700;
+}
+.body{
+    display: flex;
+    align-items: center;
+    height: 71vh;
+}
+.cta-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 75%;
+}
+button{
+    border-radius: .8rem;
+    width: 7rem;
+    font-size: 1.5rem;
+}
+.logo-image{
+    margin: 2rem;
+    height: 35rem;
+    width: 50rem;
+}
+.logo{
+    border-radius: 1rem;
+    height: 75%;
+    width: 85%;
+}
+
+@media screen and (max-width: 768px){
+    .cont-principal{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5;
+    }
+    .body{
+        flex-direction: column;
+    }
+    .logo-image{
+        margin: 1rem;
+        text-align: center;
+        height: 30rem;
+        width: 100%;
+    }
+    .logo{
+        border-radius: 1rem;
+        height: 80%;
+        width: 80%;
+    }
+    a{
+        margin: .5rem;
+    }
+}
