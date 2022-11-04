@@ -1,9 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../Componentes/ButtonNav.css'
 
 export default function ButtonNav(props) {
-    let { nombre, Link } = props
+    let { n1, n2, Link, title } = props
+    let [mostratOcultar, setMostratOcultar] = useState(false);
+    let hide = () => {
+        setMostratOcultar(!mostratOcultar)
+    }
     return (
-        <a href={Link}>{nombre}</a>
-    )
-}
+        <div>
+            {mostratOcultar ? (
+                <>
+                <p onClick={hide}>{title}</p>
+                <ul>
+                    <li>
+                        <a href={Link}>{n1}</a>
+                    </li>
+                    <li>
+                        <a href={Link}>{n2}</a>
+                    </li>
+                </ul>
+                </>
+            ) : (
+                <p onClick={hide}>{title}</p>
+            )}
+        </div>
+    )};
