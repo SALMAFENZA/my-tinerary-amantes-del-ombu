@@ -1,6 +1,6 @@
 # my-tinerary-amantes-del-ombu
 
-          Reglamento:
+Reglamento:
 
 1- Todas las ramas de trabajo se van a mergear a la rama sprint-1.
 
