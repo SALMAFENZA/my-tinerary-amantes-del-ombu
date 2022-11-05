@@ -1,4 +1,7 @@
-let hotelsandcasinos = [
+
+function hoteles() {
+
+let hotelandcasinos = [
 {
     id: "ho1",
     name: "Intercontinental Amstel Amsterdam",
@@ -143,4 +146,8 @@ let hotelsandcasinos = [
     citiId: "city12",
     userId: "admin1",
   },
-];
+]
+
+return (<SliderHotels hotelandcasinos={hotelandcasinos} range={4} text='Popular Hotel'/>)  
+}
+export default hoteles
